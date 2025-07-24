@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Skills</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e4e9f0);
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .skills-section {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .skills-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2d2d2d;
+    }
+
+    .skill-category {
+      margin-bottom: 40px;
+    }
+
+    .skill-category h3 {
+      display: flex;
+      align-items: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+      gap: 10px;
+      color: #222;
+    }
+
+    .skill-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px 30px;
+    }
+
+    .skill-list li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      background-color: #f9fafb;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .skill-list li:hover {
+      background-color: #edf0f5;
+      transform: translateY(-2px);
+    }
+
+    .skill-list li i {
+      width: 20px;
+      height: 20px;
+      color: #4a90e2;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+<section class="skills-section" data-aos="zoom-in">
+  <h2 data-aos="fade-up">💼 Technical Skills</h2>
+
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+    <h3><i data-lucide="code"></i> Programming Languages</h3>
+    <ul class="skill-list">
+      <li><i data-lucide="file-code"></i> PHP – especially with Laravel</li>
+      <li><i data-lucide="file-code-2"></i> JavaScript – including React</li>
+      <li><i data-lucide="terminal-square"></i> Python – backend apps & chatbots</li>
+      <li><i data-lucide="file-text"></i> HTML & CSS</li>
+      <li><i data-lucide="database"></i> SQL – MySQL & SQLite</li>
+    </ul>
+  </div>
+
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+    <h3><i data-lucide="layers"></i> Frameworks & Libraries</h3>
+    <ul class="skill-list">
+      <li><i data-lucide="laravel"></i> Laravel 12 – CRUD, Filament, multi-role</li>
+      <li><i data-lucide="atom"></i> React.js – frontend & chatbot UIs</li>
+      <li><i data-lucide="wind"></i> Tailwind CSS – utility-first UI</li>
+      <li><i data-lucide="layout"></i> Bootstrap – responsive layouts</li>
+      <li><i data-lucide="flask-conical"></i> Flask – Python web backend</li>
+      <li><i data-lucide="settings"></i> FilamentPHP – admin panels</li>
+    </ul>
+  </div>
+
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+    <h3><i data-lucide="database"></i> Databases</h3>
+    <ul class="skill-list">
+      <li><i data-lucide="server"></i> MySQL – for Laravel projects</li>
+      <li><i data-lucide="server-cog"></i> SQLite – with Flask backend</li>
+      <li><i data-lucide="shuffle"></i> Eloquent ORM – Laravel ORM</li>
+    </ul>
+  </div>
+
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+    <h3><i data-lucide="palette"></i> Frontend Tools</h3>
+    <ul class="skill-list">
+      <li><i data-lucide="code"></i> Blade Templating – Laravel views</li>
+      <li><i data-lucide="move"></i> AOS Animations – scroll effects</li>
+      <li><i data-lucide="mouse-pointer-click"></i> JavaScript DOM Manipulation</li>
+    </ul>
+  </div>
+
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+    <h3><i data-lucide="tool"></i> Tools & Platforms</h3>
+    <ul class="skill-list">
+      <li><i data-lucide="git-branch"></i> Git & GitHub – version control</li>
+      <li><i data-lucide="laptop"></i> VS Code – code editor</li>
+      <li><i data-lucide="box"></i> XAMPP – PHP development</li>
+      <li><i data-lucide="pen-tool"></i> Figma – UI/UX design (if used)</li>
+      <li><i data-lucide="cloud"></i> Salesforce (Beginner) – via Yarl Ohana</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Lucide + AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  lucide.createIcons();
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>
